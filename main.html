@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tree.css">
+
+    <script src="./main.js" defer></script>
+    <script src="./tree.js" defer></script>
+
+    <title>Caminho das Células</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./img/logo-micro-fundo.svg" alt="" class="icon">
+        </div>
+        <nav id="header-nav">
+            <a href="">Inicio</a>
+            <a href="#sec-autor">Sobre</a>
+            <a href="#aplication">Aplicação</a>
+            <a href="">Autor</a>
+            <a href="./html.html">Resumo</a>
+        </nav>
+    </header>
+    <main>
+        <section id="edit">
+            <img src="./img/2.svg" alt="" class="img-back">
+            <section id="sec-intro">
+                <h1 id="intro-title">Caminho das <label for="" id="intro-title-label">Células<label></h1>
+                <h2 class="subtitulo">Do micro ao macro</h2>
+                <p class="p">Abordando a organização celular e sua relação com os reinos biológicos, investigando como estruturas microscópicas se conectam e dão origem à diversidade de formas de vida, desde os organismos mais simples até os mais complexos.</p>
+                <button id="bnt" class="b">
+                    <p>Descrição</p>
+                </button>
+            </section>       
+            <img src="./img/3.svg" alt="" class="img-back">
+        </section>
+
+
+        <section id="sec-autor">
+            <div id="autor-img"></div>
+
+            <div id="autor-text">
+                <h1 id="autor-text-title" class="subtitulo">Missão °</h1>
+                <p id="autor-text-p" class="p">Em sala de aula, apoiando educadores na compreensão da organização biológica e inspirando estudantes a exploração da biologia</p>
+                <button id="autor-text-b" class="b"><p>lorem</p></button>
+            </div>
+        </section>
+
+        <section id="aplication">
+
+            <h1 id="aplication-title">TEXTO PROVISORIO</h1>
+
+            <div id="tree">
+                <div class="node" data-id="1">A célula tem Núcleo?</div>
+
+                <div class="node" data-id="2" data-parent-id="1">Sim</div>
+                <div class="node" data-id="3" data-parent-id="1">Não</div>
+
+                <div class="node" data-id="4" data-parent-id="2">Tem parede celular</div>
+
+                <div class="node" data-id="5" data-parent-id="4">Sim</div>
+                <div class="node" data-id="6" data-parent-id="4">Não</div>
+
+                <div class="node" data-id="7" data-parent-id="3">Reino Monera</div>
+
+                <div class="node" data-id="8" data-parent-id="5">Realiza fotosintese</div>
+                
+                <div class="node" data-id="9" data-parent-id="8">Sim</div>
+                <div class="node" data-id="10" data-parent-id="8">Não</div>
+
+                <div class="node" data-id="11" data-parent-id="9">Reino Plantae</div>
+                <div class="node" data-id="12" data-parent-id="10">Se alimenta por absorção de alimentos</div>
+
+                <div class="node" data-id="13" data-parent-id="12">Sim</div>
+                <div class="node" data-id="14" data-parent-id="12">Não</div>
+
+                <div class="node" data-id="15" data-parent-id="13">Reino Fungi</div>
+                <div class="node" data-id="16" data-parent-id="14">Reino Plantae</div>
+
+                <div class="node" data-id="17" data-parent-id="6">O organismo da qual a celula pertence é uni ou multicelular</div>
+
+                <div class="node" data-id="18" data-parent-id="17">Sim</div>
+                <div class="node" data-id="19" data-parent-id="17">Não</div>
+
+                <div class="node" data-id="20" data-parent-id="18">Reino Animalia</div>
+                <div class="node" data-id="21" data-parent-id="19">Reino Protista</div>
+            </div>
+
+            <div id="mostra-celula">
+                <h1>pobre</h1>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./img/logo-micro-fundo.svg" alt="" id="footer-logo" class="icon">
+        <h1 id="footer-h1">Frase top no fundo da página</h1>
+    </footer>
+</body>
+</html>
