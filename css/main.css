@@ -30,6 +30,8 @@ header{
 
     height: 12dvh;
     background-image: linear-gradient(to right, var(--roxo-escuro), var(--roxo-claro));
+
+    z-index: 3;
 }
 
 header:first-child{
@@ -63,6 +65,42 @@ header:last-child{
 
 #hamburger{
     display: none;
+}
+
+#side-menu.some{
+    display: none;
+}
+
+#side-menu{
+    display: flex;
+    position: fixed;
+    right: -40%;
+
+    background-color: var(--roxo-escuro);
+    width: 40vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+#side-nav{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 50%;
+
+    row-gap: 10vh;
+}
+
+#side-nav a{
+    color: var(--rosa-claro);
+
+    font-size: 1.2em;
 }
 
 section#edit{
@@ -231,6 +269,8 @@ section#edit{
     position: absolute;
 
     right: 5vw;
+
+    z-index: 0;
 }
 
 /*                  Tela Modifier PC / Laptop               */
@@ -475,5 +515,17 @@ section#edit{
         justify-content: center;
 
         font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #footer-h1{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 334px){
+    #footer-h1{
+        font-size: 1em;
     }
 }
