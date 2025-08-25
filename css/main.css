@@ -150,7 +150,7 @@ section#edit{
 }
 
 #intro-title{
-    font-size: 4.5em;
+    font-size: 4.4vw;
 
     grid-area: title;
 }
@@ -160,7 +160,7 @@ section#edit{
 }
 
 .subtitulo{
-    font-size: 2.5em;
+    font-size: 2.5vw;
 
     align-self: self-start;
     
@@ -173,6 +173,8 @@ section#edit{
 #sec-intro .p{
     text-align: center;
     width: 28dvw;
+
+    font-size: 1.2vw;
 
     grid-area: desc;
 }
@@ -273,29 +275,6 @@ section#edit{
     z-index: 0;
 }
 
-/*                  Tela Modifier PC / Laptop               */
-
-@media screen and (max-width: 1630px) {
-    #intro-title{
-        font-size: 4.0em;
-    }
-
-    .subtitulo{
-        font-size: 2.4em;
-    }
-
-    .p{
-        font-size: 1.1em;
-        font-weight: 100;
-    }
-}
-
-@media screen and (max-width: 1466px) {
-    #intro-title{
-        font-size: 3.6em;
-    }
-}
-
 /*          Celular Edition         */
 
 @media screen  and (max-width: 550px){
@@ -389,7 +368,6 @@ section#edit{
     }
 
     #intro-title{
-        font-size: 3.2em;
 
         grid-area: title;
     }
