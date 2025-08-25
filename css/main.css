@@ -50,7 +50,7 @@ header:last-child{
     display: grid;
     grid-auto-flow: column;
 
-    grid-template-columns: repeat(4, 8dvw);
+    grid-template-columns: repeat(4, 12dvw);
 
     justify-items: center;
 }
@@ -74,7 +74,7 @@ header:last-child{
 #side-menu{
     display: flex;
     position: fixed;
-    right: -40%;
+    right: -40vw;
 
     background-color: var(--roxo-escuro);
     width: 40vw;
@@ -191,8 +191,7 @@ section#edit{
 
     grid-template-rows: 100%;
 
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
     height: 70dvh;
@@ -203,10 +202,12 @@ section#edit{
 
     justify-self: center;
 
-    height: 60%;
+    height: 20vw;
     width: 100%;
 
     background-color: #251e29;
+
+    border-radius: 100%;
 }
 
 #autor-text{
@@ -221,6 +222,8 @@ section#edit{
         "desc"
         "bnt"
     ;
+
+    width: 100%;
 }
 
 #autor-text-title{
@@ -235,6 +238,8 @@ section#edit{
     font-size: 1.5em;
 
     margin-bottom: 15px;
+
+    width: 80%;
 }
 
 #autor-text-b{
@@ -273,6 +278,14 @@ section#edit{
     right: 5vw;
 
     z-index: 0;
+}
+
+/*          media querys            */
+
+@media screen and (max-width: 380px) {
+    #footer-h1{
+        font-size: 1.1em;
+    }
 }
 
 /*          Celular Edition         */
@@ -368,6 +381,7 @@ section#edit{
     }
 
     #intro-title{
+        font-size: 9.5vw;
 
         grid-area: title;
     }
@@ -377,7 +391,7 @@ section#edit{
     }
 
     #sec-intro .subtitulo{
-        font-size: 2em;
+        font-size: 7vw;
         justify-self: center;
         
         display: flex;
@@ -460,6 +474,12 @@ section#edit{
 
         border-radius: 10px;
     }
+    /*          aplication section          */
+    #mostra-celula{
+        display: none;
+    }
+
+
 
     /*          Footer section          */
 
