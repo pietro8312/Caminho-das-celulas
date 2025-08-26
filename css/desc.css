@@ -191,3 +191,14 @@ main p{
     }
 }
 
+@media screen and (max-width: 380px) {
+    #footer-h1{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 334px){
+    #footer-h1{
+        font-size: 1em;
+    }
+}
