@@ -150,7 +150,7 @@ section#edit{
 }
 
 #intro-title{
-    font-size: 4.4vw;
+    font-size: 4.3vw;
 
     grid-area: title;
 }
@@ -282,11 +282,94 @@ section#edit{
 
 /*          media querys            */
 
-@media screen and (max-width: 380px) {
-    #footer-h1{
-        font-size: 1.1em;
+/*          tablet Edition          */
+
+    @media screen and (max-width: 1000px) {
+        section#edit{
+            display: grid;
+
+            grid-template-columns: auto;
+
+            background-color: var(--rosa-fundo);
+
+            overflow-x: hidden;
+
+            height: 83vh;
+
+            padding-top: 10vh;
+
+            background-image: url(../img/fundo-cel.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: 150px;
+        }
+
+        .img-back{
+            display: none;
+        }
+
+        #sec-intro{
+            display: grid;
+            grid-template-rows: 
+                auto
+                7dvh 
+                auto 
+                1dvh
+                6dvh
+            ;
+
+            grid-template-columns: 100%;
+
+            grid-template-areas: 
+                "title"
+                " sub "
+                "desc "
+                "  .  "
+                " bnt "
+            ;
+
+            row-gap: 1vh;
+
+            height: 100%;
+            width: 100%;
+            margin-top: 10vh;
+
+            background: transparent;
+        }
+
+        #intro-title{
+            font-size: 7vw;
+
+            grid-area: title;
+        }
+
+        #intro-title-label{
+            color: var(--roxo-claro);
+        }
+
+        #sec-intro .subtitulo{
+            font-size: 5vw;
+            justify-self: center;
+            
+            display: flex;
+
+            grid-area: sub;
+        }
+
+        #sec-intro .p{
+            text-align: center;
+            width: 50%;
+
+            font-size: 1.1em;
+
+            grid-area: desc;
+        }
+
+        #bnt{
+            grid-area: bnt;
+        }
     }
-}
+
 
 /*          Celular Edition         */
 
