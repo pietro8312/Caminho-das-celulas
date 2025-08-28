@@ -183,6 +183,19 @@ section#edit{
     grid-area: bnt;
 }
 
+#especial{
+    position: absolute;
+    top: 70%;
+    right: 14%;
+
+    display: flex;
+
+    width: 5%;
+    height: 5%;
+
+    cursor: default;
+}
+
 #sec-autor{
     display: grid;
     grid-auto-flow: column;

@@ -103,19 +103,10 @@ header:last-child{
     font-size: 1.2em;
 }
 
-main{
-    padding: 20vh 5vw 0 5vw;
-}
-
-main h1{
-    font-size: 4.5vw;
-    text-align: center;
-
-    margin-bottom: 4vw;
-}
-
-main p{
-    text-align: justify;
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
 }
 
 @media screen  and (max-width: 550px){
@@ -153,6 +144,24 @@ main p{
         height: 60%;
     }
 
+    /*          main section            */
+
+    main{
+        background: url(../img/fundo-desc.png) center;
+        padding: 20vh 5vw 10vh 5vw;
+    }
+
+    main h1{
+        font-size: 4.5vw;
+        text-align: center;
+
+        margin-bottom: 4vw;
+    }
+
+    main p{
+        text-align: justify;
+    }
+
     
     /*          Footer section          */
 
@@ -163,16 +172,14 @@ main p{
 
         height: 10dvh;
 
-        margin-top: 4vw;
-
         background-image: linear-gradient(to right, #1f063b, #4c2070);
     }
 
     #footer-logo{
-        position: absolute;
-
         height: 7.5vh;
+    }
 
-        left: 5vw;
+    .icon-redes{
+        height: 5vh;
     }
 }
