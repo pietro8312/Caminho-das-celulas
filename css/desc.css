@@ -173,6 +173,10 @@ footer{
         height: 10dvh;
 
         background-image: linear-gradient(to right, #1f063b, #4c2070);
+
+        position: absolute;
+        width: 100%;
+        bottom: auto;
     }
 
     #footer-logo{
