@@ -3,7 +3,7 @@
     --roxo-escuro: #490894;
 
     --rosa-claro: #e0b8f7;
-    --rosa-fundo: #fce2ff;
+    --rosa-fundo: #f0ebf3;
 }
 
 html {
@@ -50,7 +50,7 @@ header:last-child{
     display: grid;
     grid-auto-flow: column;
 
-    grid-template-columns: repeat(4, 12dvw);
+    grid-template-columns: repeat(4, 13dvw);
 
     justify-items: center;
 }
@@ -301,7 +301,6 @@ section#edit{
             background-image: url(../img/fundo-cel.svg);
             background-repeat: no-repeat;
             background-position: center;
-            background-position-y: 150px;
         }
 
         .img-back{
@@ -568,8 +567,6 @@ section#edit{
 
     footer{
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
 
         column-gap: 8dvw;
 
@@ -579,34 +576,10 @@ section#edit{
     }
 
     #footer-logo{
-        margin-left: 4dvw;
-
-        height: 80%;
+        height: 7.5vh;
     }
 
-    #footer-h1{
-        display: flex;
-
-        color: var(--rosa-fundo); 
-
-        width: 100%;
-
-        margin-left: -14dvw;
-
-        justify-content: center;
-
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    #footer-h1{
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (max-width: 334px){
-    #footer-h1{
-        font-size: 1em;
+    .icon-redes{
+        height: 5vh;
     }
 }

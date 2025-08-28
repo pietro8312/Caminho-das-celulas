@@ -48,7 +48,7 @@ a:hover{
 footer{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
 
     column-gap: 8dvw;
 
@@ -58,17 +58,20 @@ footer{
 }
 
 #footer-logo{
-    margin-left: 4dvw;
+    position: absolute;
+
+    height: 11vh;
+
+    left: 5vw;
 }
 
-#footer-h1{
-    display: flex;
-
-    color: var(--rosa-fundo); 
-
+#div-icon{
     width: 100%;
-
-    margin-left: -14dvw;
-
+    display: flex;
     justify-content: center;
+    column-gap: 3.5vw;
+}
+
+.icon-redes{
+    height: 7vh;
 }

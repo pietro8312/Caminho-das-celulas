@@ -158,8 +158,6 @@ main p{
 
     footer{
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
 
         column-gap: 8dvw;
 
@@ -171,34 +169,10 @@ main p{
     }
 
     #footer-logo{
-        margin-left: 4dvw;
+        position: absolute;
 
-        height: 80%;
-    }
+        height: 7.5vh;
 
-    #footer-h1{
-        display: flex;
-
-        color: var(--rosa-fundo); 
-
-        width: 100%;
-
-        margin-left: -14dvw;
-
-        justify-content: center;
-
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    #footer-h1{
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (max-width: 334px){
-    #footer-h1{
-        font-size: 1em;
+        left: 5vw;
     }
 }
