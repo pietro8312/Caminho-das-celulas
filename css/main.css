@@ -186,7 +186,7 @@ section#edit{
 #especial{
     position: absolute;
     top: 70%;
-    right: 14%;
+    left: 0%;
 
     display: flex;
 
