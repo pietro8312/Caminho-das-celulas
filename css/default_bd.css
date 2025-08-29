@@ -1,0 +1,66 @@
+:root{
+    --roxo-claro: #6e439e;
+    --roxo-escuro: #490894;
+
+    --rosa-claro: #e0b8f7;
+    --rosa-fundo: #f0ebf3;
+    --fundo-pragmatico: #e3dee4;
+}
+
+body{
+    background-color: var(--fundo-pragmatico);
+}
+
+#edit{
+    justify-items: center;
+}
+
+main{
+    background-color: var(--rosa-fundo);
+    height: 100%;
+    width: 80%;
+    padding: 5%;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    margin-top: 2.5vh;
+    text-align: justify;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#bibliografia{
+    margin-top: 15vh;
+}
+
+#bibliografia p{
+    margin-bottom: 5vh;
+}
+
+footer{
+    position: relative;
+
+    width: 100%;
+
+    bottom: 0px;
+}
+
+@media screen  and (max-width: 800px){
+    header{
+        top: 0px;
+    }
+
+    #edit{
+        padding: 16.5vh 0px 2.5vh  0px;
+    }
+
+    footer{
+        position: relative;
+    }
+}

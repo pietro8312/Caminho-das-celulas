@@ -1,3 +1,108 @@
+:root{
+    --roxo-claro: #6e439e;
+    --roxo-escuro: #490894;
+
+    --rosa-claro: #e0b8f7;
+    --rosa-fundo: #f0ebf3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+    Modificar barra lateral
+
+::-webkit-scrollbar{
+    background-color: rgba(241, 241, 241, 0.003);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(146, 146, 146, 0.6);
+}
+
+*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 12dvh;
+    background-image: linear-gradient(to right, var(--roxo-escuro), var(--roxo-claro));
+
+    z-index: 3;
+}
+
+header:first-child{
+    padding-left: 4dvw;
+}
+
+header:last-child{
+    padding-right: 4dvw;
+}
+
+.icon{
+    height: 11vh;
+}
+
+#header-nav{
+    display: grid;
+    grid-auto-flow: column;
+
+    grid-template-columns: repeat(3, 13dvw);
+
+    justify-items: center;
+}
+
+#header-nav a{
+    font-size: 1.2em;
+    font-weight: bold;
+
+    text-decoration: none;
+    color: var(--rosa-claro);
+}
+
+#hamburger{
+    display: none;
+}
+
+#side-menu.some{
+    display: none;
+}
+
+#side-menu{
+    display: flex;
+    position: fixed;
+    right: -40vw;
+
+    background-color: var(--roxo-escuro);
+    width: 40vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+#side-nav{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 50%;
+
+    row-gap: 10vh;
+}
+
+#side-nav a{
+    color: var(--rosa-claro);
+
+    font-size: 1.2em;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -74,4 +179,63 @@ footer{
 
 .icon-redes{
     height: 7vh;
+}
+
+
+@media screen  and (max-width: 800px){
+    header{
+        position: fixed;
+
+        width: 96vw;
+    }
+
+    #header-nav{
+        grid-template-columns: repeat(1, 10dvw);
+
+        padding-right: 4vw;
+    }
+
+    #header-nav a{
+        display: none;
+    }
+
+    #hamburger{
+        display: grid;
+
+        grid-template-rows: repeat(3, auto);
+        row-gap: 3px;
+
+        height: 4vh;
+        width: 70%;
+
+        background-color: transparent;
+        border: none;
+    }
+
+    #hamburger i{
+        background-color: white;
+        height: 60%;
+    }
+
+        /*          Footer section          */
+
+    footer{
+        display: flex;
+
+        column-gap: 8dvw;
+
+        height: 10dvh;
+
+        background-image: linear-gradient(to right, #1f063b, #4c2070);
+
+        bottom: 0px;
+    }
+
+    #footer-logo{
+        height: 7.5vh;
+    }
+
+    .icon-redes{
+        height: 5vh;
+    }
 }
