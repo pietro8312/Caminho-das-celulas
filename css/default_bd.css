@@ -39,8 +39,37 @@ p{
     margin-top: 15vh;
 }
 
+#bibliografia h1{
+    font-size: 2.5vw;
+}
+
 #bibliografia p{
     margin-bottom: 5vh;
+    text-align: left;
+}
+
+.deitado{
+    font-style: italic;
+}
+
+.livros{
+    font-weight: bold;
+    color: var(--roxo-claro);
+}
+
+ul h3{
+    font-size: 2vw;
+
+    margin: 0 0 3vh 0;
+}
+
+li{
+    margin-bottom: 4vh;
+}
+
+ul li a{
+    color: var(--roxo-escuro);
+    font-weight: bolder;
 }
 
 footer{
@@ -58,6 +87,15 @@ footer{
 
     #edit{
         padding: 16.5vh 0px 2.5vh  0px;
+    }
+    #bibliografia h1{
+        font-size: 3.5vw;
+    }
+
+    ul h3{
+        font-size: 3vw;
+
+        margin: 0 0 3vh 0;
     }
 
     footer{
