@@ -29,6 +29,7 @@ h1{
 p{
     margin-top: 2.5vh;
     text-align: justify;
+    line-height: 1.5;
 }
 
 .bold{
@@ -96,6 +97,10 @@ footer{
         font-size: 3vw;
 
         margin: 0 0 3vh 0;
+    }
+
+    p{
+        line-height: normal;
     }
 
     footer{
