@@ -185,7 +185,7 @@ section#edit{
     align-self: center;
     margin: 4dvh 0px;
 
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 #mostra-celula{
@@ -282,6 +282,10 @@ section#edit{
 
         #bnt{
             grid-area: bnt;
+        }
+
+        #aplication-title{
+            font-size: 4vw;
         }
     }
 
@@ -439,6 +443,7 @@ section#edit{
 
         border-radius: 10px;
     }
+
     /*          aplication section          */
     #mostra-celula{
         display: none;
