@@ -14,21 +14,34 @@
     flex-wrap: wrap;
 }
 
-.node {
+button.node {
     padding: 15px 25px;
+    margin: 0 2dvw;
     border: 2px solid #333;
     border-radius: 10px;
     background: white;
     cursor: pointer;
     transition: transform 0.2s, background 0.2s;
 }
-.node:hover {
+button.node:hover {
     transform: scale(1.05);
     background: #f0f0f0;
 }
-.hidden {
+button.hidden {
     display: none;
 }
-.selected {
+button.selected {
     background-color: lightblue;
+}
+
+button#btn-tree{
+    padding: 10px;
+    position: relative;
+    top: 10%;
+    right: -40%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
 }
