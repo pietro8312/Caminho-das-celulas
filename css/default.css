@@ -24,6 +24,7 @@ html {
 */
 
 header{
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,6 +33,8 @@ header{
     background-image: linear-gradient(to right, var(--roxo-escuro), var(--roxo-claro));
 
     z-index: 3;
+    position: fixed;
+    width: 100dvw;
 }
 
 header:first-child{
@@ -50,12 +53,11 @@ header:last-child{
     display: grid;
     grid-auto-flow: column;
 
-    grid-template-columns: repeat(3, 13dvw);
-
     justify-items: center;
 }
 
 #header-nav a{
+    cursor: pointer;
     font-size: 1.2em;
     font-weight: bold;
 

@@ -6,6 +6,107 @@
     --rosa-fundo: #f0ebf3;
 }
 
+#msgFeedback{
+    transition: .2s;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 20% auto;
+    height: 70vh;
+    width: 30vw;
+    position: absolute;
+    z-index: 999;
+    top: calc(50dvh - 35dvh);
+    right: -30dvw;
+    position: fixed;
+    background-color: #37076db0;
+    backdrop-filter: blur(10px);
+    padding: 1.5% 2%;
+    border-radius: 25px;
+}
+
+#msgFeedback.move{
+    transform: translateX(-65dvw);
+}
+
+#msgFeedback h1{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 10%;
+    text-align: left;
+    color: #fff;
+}
+
+#msgFeedback h1 button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#msgFeedback h1 button:hover{
+    transform: scale(110%);
+    svg #svg{
+        fill: #e5beff;
+    }
+}
+
+#msgFeedback h1 svg{
+    height: 100%;
+    width: 100%;
+}
+
+#msgFeedback form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#msgFeedback form input{
+    padding: 2%;
+    border-radius: 20px;
+    border: none;
+    background-color: #e5beff;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#msgFeedback form textarea#text{
+    box-sizing: border-box;
+    padding: 2%;
+    height: 50%;
+    border-radius: 25px;
+    background-color: #e5beff;
+    font-size: 1rem;
+}
+
+#msgFeedback form textarea#text, #msgFeedback form input{
+    color: #fff;
+}
+
+#msgFeedback form textarea#text::placeholder, #msgFeedback form input::placeholder{
+    color: #f1e6ff;
+}
+
+#msgFeedback form textarea#text:focus-visible, #msgFeedback form input:focus{
+    border: none !important;
+    outline: none;
+    scale: 102%;
+}
+
+#msgFeedback #submit{
+    padding: 2%;
+    border-radius: 20px;
+    border: none;
+    background-color: #e5beff;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#msgFeedback #submit:hover{
+    background-color: #d89dff;
+    transform: scale(102%);
+}
+
 section#edit{
     display: grid;
 

@@ -28,3 +28,29 @@ bntHam.addEventListener("mousedown", function(){
         turn = !turn;
     }
 });
+
+const headerNavDesk = document.querySelector('#header-nav')
+let links = document.querySelectorAll('#header-nav a').length
+
+headerNavDesk.style.gridTemplateColumns = `repeat(${links},13dvw)`;
+
+let click = false
+
+const feedBack = document.querySelector('#feedback')
+const msg = document.querySelector('#msgFeedback')
+
+feedBack.addEventListener('click', () => {
+    if(click === false){
+        msg.classList.add('move');
+        click = !click
+    }else{
+        msg.classList.remove('move');
+        click = !click
+    }
+})
+
+const btnReturn = document.querySelector('#return')
+btnReturn.addEventListener('click', () => {
+    msg.classList.remove('move');  
+})
+// terminar isso aqui pqpqpqppqpqpq
