@@ -1,3 +1,9 @@
+let largura = window.innerWidth;
+
+window.addEventListener('resize', () => {
+    resize();
+});
+
 const bntHam = document.querySelector("#hamburger");
 var turn = false;
 
@@ -32,7 +38,13 @@ bntHam.addEventListener("mousedown", function(){
 const headerNavDesk = document.querySelector('#header-nav')
 let links = document.querySelectorAll('#header-nav a').length
 
-headerNavDesk.style.gridTemplateColumns = `repeat(${links},13dvw)`;
+function resize(){
+    if(window.screen.width > 800){
+        headerNavDesk.style.gridTemplateColumns = `repeat(${links},13dvw)`;
+    }else{
+        headerNavDesk.style.gridTemplateColumns = `repeat(${1},12dvw)`;
+    }
+}
 
 let click = false
 
@@ -52,5 +64,6 @@ feedBack.addEventListener('click', () => {
 const btnReturn = document.querySelector('#return')
 btnReturn.addEventListener('click', () => {
     msg.classList.remove('move');  
+    click = !click
 })
 // terminar isso aqui pqpqpqppqpqpq

@@ -47,6 +47,10 @@ function createNode(tree){
                     const filhosDireto = Array.from(divs[nivel+1].querySelectorAll('button')).filter(filho => filho.dataset.parentId === visualElement.dataset.id)
                     
                     filhosDireto.forEach(filho => {filho.classList.remove('hidden')})
+                    if(filhosDireto.length === 0){
+                        last()
+                        hideAll()
+                    }
                 }
 
                 if(visualElement.dataset.id > 0){
