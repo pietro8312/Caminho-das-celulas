@@ -45,6 +45,7 @@ function resize(){
         headerNavDesk.style.gridTemplateColumns = `repeat(${1},12dvw)`;
     }
 }
+resize()
 
 let click = false
 

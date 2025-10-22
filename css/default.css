@@ -16,6 +16,7 @@ html {
 
 body{
     overflow-x: hidden;
+    width: 100dvw;
 }
 
 /*
@@ -36,6 +37,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: unset;
 
     height: 12dvh;
     background-image: linear-gradient(to right, var(--roxo-escuro), var(--roxo-claro));
@@ -84,10 +86,10 @@ header:last-child{
     display: flex;
     position: fixed;
     right: -40vw;
-
+    top: 0;
     background-color: var(--roxo-escuro);
     width: 40vw;
-    height: 100%;
+    height: 100dvh;
     justify-content: center;
     align-items: center;
 

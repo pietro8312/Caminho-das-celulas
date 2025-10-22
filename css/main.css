@@ -9,7 +9,7 @@
 #msgFeedback{
     transition: .2s;
     box-sizing: border-box;
-    display: grid;
+    display: none;
     grid-template-rows: 20% auto;
     height: 70vh;
     width: 30vw;
@@ -25,6 +25,7 @@
 
 #msgFeedback.move{
     transform: translateX(-65dvw);
+    display: grid;
 }
 
 #msgFeedback h1{

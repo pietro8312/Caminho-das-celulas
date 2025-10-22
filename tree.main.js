@@ -48,8 +48,8 @@ function createNode(tree){
                     
                     filhosDireto.forEach(filho => {filho.classList.remove('hidden')})
                     if(filhosDireto.length === 0){
-                        last()
-                        hideAll()
+                        last();
+                        hideAll();
                     }
                 }
 
@@ -85,6 +85,10 @@ function hideAll(){
 
     const root = document.querySelector(`div#tree div button[data-id='0']`);
     if(root !== null && root !== undefined) root.classList.remove('hidden');
+}
+
+function last(){
+    
 }
 
 
